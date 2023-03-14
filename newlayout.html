@@ -74,37 +74,103 @@
             background-color: #bdc1c4;
         }
         .l{
-          height:18vh;
-          width:18.51vw;
+          height:10vh;
+          width:19.51vw;
           border:2px solid red;
           font-size: 100px;
         }
         #ll1{
-            margin:300px 0px 0px 220px;
-            background-image: url("https://th.bing.com/th/id/OIP.5xNlY8XyTzdopmH3KSi7WwHaDj?pid=ImgDet&rs=1");
+            margin:430px 0px 0px 220px;
+            background-image: url("D:\project\flights.jpg");
             background-size: cover;
         }
         #ll2{
-            margin:300px 0px 0px 0px;
+            margin:430px 0px 0px 0px;
            
         }
         #ll3{
-            margin:300px 0px 0px 0px;
+            margin:430px 0px 0px 0px;
         }
         #ll4{
-            margin:300px 30px 0px 0px;
+            margin:430px 30px 0px 0px;
         }
         .divider{
-            height:50vh;
+            height:30vh;
             width:100vw;
             border:2px solid red;
             background-color: white;
         }
+        .body{  
+                height: 10vh;
+                width: 100vw;
+                background-color: white;
+            }
+            #maps{
+                    
+                height: 65vh;
+                width: 60vw;
+                border: 2px solid black;
+                margin: 20px 20vw 15vh 20vw;
+            }
+            .bottom{
+                width: 100vw;
+                padding-top: 5px;
+                padding-bottom: 20px;
+                margin: 0;
+                background-color: whitesmoke;
+                position: relative;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                font-family: "open sans";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+            #rights{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+            #socials{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 1rem 0 3rem 0;
+            }
+            #socials-logo{
+                height: 28px;
+                width: 28px;
+            }
+            #h3-font{
+                font-size: 1.8rem;
+                font-weight: 400;
+                text-transform: capitalize;
+                line-height: 3rem;
+            }
+            #p-sl{
+                max-width: 500px;
+                margin: 5px auto;
+                line-height: 28px;
+                font-size:  14px;
+                text-transform: capitalize;
+                text-align: center;
+                padding: 5px 0;
+            }
+            .list{
+                display:inline-block;
+                margin:0px 5px;
+            }
     </style>
 </head>
 <body>
     <header class="top">
-        <div class="logo"></div>
+        <img class="logo" src="D:\project\logo white.jpg">
         <div class="loginpage">
             <div class="login">Login</div>
             <div class="signin">Singup</div>
@@ -120,13 +186,32 @@
         <div  id ="kk7"class="k">Arabian</div>
    </section>
    <section class ="slider">
-    <div  id ="ll1"class="l"></div>
-    <div  id ="ll2"class="l"></div>
-    <div  id ="ll3"class="l"></div>
-    <div  id ="ll4"class="l"></div>
+    <img  id ="ll1"class="l" src="D:\project\flights.jpg" >
+    <img  id ="ll2"class="l" src="D:\project\trains.jpg">
+    <img  id ="ll3"class="l" src="D:\project\bus.jpg">
+    <img  id ="ll4"class="l" src="D:\project\event.jpg">
    </section>
 
    <section class="divider"></section>
+    
+</body>
+<body class="body">
+    <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125323.47390227274!2d76.89702329719287!3d11.011701534136511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1678637242716!5m2!1sen!2sin"></iframe>
+    <footer class="bottom">
+        <div id="rights">
+            <h3 id="h3-font"><img src="D:\project\logo white.jpg" style="width: 175px; padding-left: 10px;"></h3>
+                <!---<img src="D:\Amrita\SEM 2\UID\Project\Screenshot 2023-03-12 212217.png" style="width: 200px;">
+            <p id="p-sl"></p> --->
+
+        </div>
+        <ul class="socials">
+            <li class ="list"><a><a href="https://www.instagram.com/" alt="instagram"><img src="D:\project\87390.png"class="social-logo" style="width: 28px; height: 28px;"></a></li>
+            <li class ="list"><a><a href="https://www.twitter.com/" alt="instagram"><img src="D:\project\618942-middle-removebg-preview.png" class="social-logo" style="width: 50px; margin-left: 10px;"></a></li>
+            <li class ="list"><a><a href="https://www.linkedin.com/" alt="instagram"><img src="D:\project\png-transparent-linkedin-computer-icons-blog-logo-watercolor-butterfly-angle-text-rectangle-removebg-preview.png" class="social-logo" style="width: 50px;"></a></li>
+            <li class ="list"><a><a href="https://www.facebook.com/" alt="instagram"><img src="D:\project\facebook-scalable-graphics-icon-facebook-logo-facebook-logo-png-clip-art-removebg-preview.png" class="social-logo" style="width: 60px; margin: 0 0 0 0;"></a></li>
+        </ul>
+        <p style="padding-top: 10px;">  copyright &copy 2023 Name | Designed by Priyanshu | Vaibhav | Vishal | Samyuktha</p>
+    </footer>
     
 </body>
 </html>
