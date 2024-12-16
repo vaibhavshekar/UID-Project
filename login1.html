@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            width: 100vw;
+        }
+        #bg1{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background: #f7f7f7;
+        }
+        #login-frame{
+            position: absolute;
+            width: 492px;
+            height: 685px;
+            left: 569px;
+            top: 80px;
+            background: #FFFFFF;
+        }
+        #welc-txt{
+            position: absolute;
+            width: 453px;
+            height: 37px;
+            left: 39px;
+            top: 93px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+        #new-txt{
+            position: absolute;
+            width: 198px;
+            height: 18px;
+            left: 39px;
+            top: 131px;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #4A5568;
+        }
+        #email{
+            position: absolute;
+            width: 387px;
+            height: 66px;
+            left: 39px;
+            top: 203px;
+        }
+        #e-txt{
+            position: absolute;
+            width: 387px;
+            height: 66px;
+            left: 4px;
+            color: rgba(0, 0, 0, 0.5);
+            
+        }
+        #e-box{
+            box-sizing: border-box;
+            position: absolute;
+            width: 387px;
+            height: 40px;
+            left: 0px;
+            top: 26px;
+            background: #FFFFFF;
+            border: 0.5px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+        }
+        #pwd{
+            position: absolute;
+            width: 387px;
+            height: 64px;
+            left: 40px;
+            top: 290px;
+
+        }
+        #p-txt{
+            position: absolute;
+            height: 23px;
+            width: 82px;
+            top: 0px;
+            left: 0px;
+
+            font-style: normal;
+            font-weight: 500;
+            font-family: 'Quicksand';
+            line-height: 22px;
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.5);
+            /* identical to box height */
+        }
+        #p-box{
+            box-sizing: border-box;
+
+            width: 387px;
+            position: absolute;
+            left: 0px;
+            height: 40px;        
+            top: 24px;
+            border: 0.5px solid #000000;
+            background: #FFFFFF;
+            border-radius: 5px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        #forgot{
+            position: absolute;
+            height: 16px;
+            width: 143px;
+            top: 5px;
+            left: 241px;
+
+            font-style: normal;
+            font-family: 'Roboto';
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #186DBC;
+        }
+        #remember-box{
+            position: absolute;
+            height: 18px;
+            width: 181px;
+            top: 373px;
+            left: 43px;
+        }
+        #rem-tick{
+            box-sizing: border-box;
+
+            width: 15px;
+            position: absolute;
+            left: 0px;
+            height: 15px;
+            top: 1px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            background: #FFFFFF;
+            border-radius: 2px;
+        }
+        #rem-txt{
+            position: absolute;
+            height: 18px;
+            width: 158px;
+            top: 0px;
+            left: 23px;
+
+            font-style: normal;
+            font-family: 'Quicksand';
+            font-size: 12px;
+            font-weight: 700;         
+            line-height: 15px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+        #signin{
+            position: absolute;
+            height: 40px;
+            width: 387px;
+            top: 421px;
+            left: 40px;
+
+        }
+        #signin-btn{
+            position: absolute;
+            height: 40px;
+            width: 387px;
+            top: 421px;
+            left: 40px;
+            border-radius: 5px;
+            background: #186DBC;
+        }
+        #signin-txt{
+            position: absolute;
+            width: 58px;
+            height: 23px;
+            top: 10px;
+            left: 165px;
+
+            font-style: normal;
+            font-family: 'Quicksand';
+            font-size: 18px;
+            font-weight: 700;
+            /* identical to box height */
+            line-height: 22px;
+            color: #FFFFFF;
+
+        }
+        #other-optn{
+            position: absolute;
+            height: 89px;
+            width: 387px;
+            top: 528px;
+            left: 40px;
+
+        }
+        #ggl-optn{
+            box-sizing: border-box;
+            width: 387px;
+            position: absolute;
+            left: 0px;
+            height: 40px;    
+            top: 0px;
+            border: 1.5px solid #186DBC;
+            background: #FFFFFF;
+        }
+        #ggl-optn-txt{
+            position: absolute;
+            height: 23px;
+            width: 66px;
+            top: 6px;
+            left: 169px;
+            font-style: normal;
+            font-family: 'Plus Jakarta Sans';
+            font-size: 18px;
+            font-weight: 700;
+            /* identical to box height */
+            line-height: 23px;
+            color: #4A5568;
+        }
+        #ggl-img{
+            position: absolute;
+            height: 22.53px;
+            width: 26px;
+            top: 0px;
+            left: -30px;
+        }
+        #optn1{
+            box-sizing: border-box;
+            position: absolute;
+            height: 40px;
+            width: 190px;
+            top: 49px;
+            left: 0px;
+            border: 1.5px solid #186DBC;
+            background: #FFFFFF;
+        }
+        #optn2{
+            box-sizing: border-box;
+            width: 190px;
+            position: absolute;
+            left: 197px;
+            height: 40px;
+            background: #FFFFFF;
+            top: 49px;
+            border: 1.5px solid #186DBC;
+        }
+        #line3{
+            position: absolute;
+            height: 0px;
+            width: 1586px;
+            top: 766px;
+            left: 0px;
+            border: 1px solid #000000;
+        }
+        #img1{
+            position: absolute;
+            height: 381px;
+            width: 499px;
+            top: 402px;
+            left: 50px;
+        }
+        #img2{
+            position: absolute;
+            height: 400px;
+            width: 182px;
+            top: 382px;
+            left: 1061px;
+        }
+        #img3{
+            position: absolute;
+            height: 400px;
+            width: 275px;
+            top: 522px;
+            left: 1300px;
+
+        }
+        #fade-line-bx{
+            position: absolute;
+            height: 18px;
+            width: 389px;
+            top: 497px;
+            left: 46px;
+
+        }
+        #ln-left{
+            position: absolute;
+            height: 0px;
+            width: 147px;
+            top: 9px;
+            left: 0px;
+            border: 1px solid rgba(0, 0, 0, 0.38);
+        }
+        #bx-txt{
+            position: absolute;
+            height: 18px;
+            width: 89px;
+            top: 0px;
+            left: 151px;
+
+            font-style: normal;
+            font-family: 'Quicksand';
+            font-size: 13px;
+            font-weight: 700;        
+            line-height: 16px;
+            color: rgba(0, 0, 0, 0.56);
+        }
+        #ln-right{
+            position: absolute;
+            height: 0px;
+            width: 147px;
+            top: 9px;
+            left: 242px;
+            border: 1px solid rgba(0, 0, 0, 0.38);
+        }
+        #optn1-txt{
+            position: absolute;
+            height: 23px;
+            left: 62px;
+            top: 7px;
+            font-family: 'Plus Jakarta Sans';
+            width: 86px;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 23px;
+            font-size: 18px;
+            color: #4A5568;
+
+        }
+        #optn2-txt{
+            position: absolute;
+            height: 23px;
+            width: 58px;
+            top: 7px;
+            left: 70px;
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            line-height: 23px;
+            font-size: 18px;
+            color: #4A5568;
+
+        }
+    </style>
+</head>
+<body id="bg1">
+    <div id="login-frame">
+        <div id="welc-txt">Welcome back to TicketHub</div>
+        <div id="new-txt">New Here? <span style="color: #186DBC;">create an account</span></div>
+        <div id="email">
+            <div id="e-txt">Email</div>
+            <input type="text" id="e-box">
+        </div>
+        <div id="pwd">
+            <div id="p-txt">Password</div>
+            <div id="forgot">Forgot your password?
+            </div>
+            <input type="password" id="p-box">
+        </div>
+        <div id="remember-box">
+            <input type="checkbox" id="rem-tick">
+            <div id="rem-txt">Remember this device</div>
+        </div>
+        <div id="signin-btn">
+            <div id="signin-txt">Signin</div>
+        </div>  
+        <div id="fade-line-bx">
+            <div id="ln-left"></div>
+            <div id="bx-txt">or sign in with</div>
+            <div id="ln-right"></div>
+        </div>
+        <div id="other-optn">
+            <div id="ggl-optn"><div id="ggl-optn-txt"><img src="D:\project\google logo.png" id="ggl-img">Google</div></div>
+            <div id="optn1">
+                <div id="optn1-txt">Microsoft</div>
+            </div>
+            <div id="optn2">
+                <div id="optn2-txt">iCloud</div>
+            </div>
+        </div>
+    </div>
+    <img id="img1" src="D:\project\girl laptop.jpg">
+    <img id="img2" src="D:\project\WhatsApp Image 2023-03-28 at 15.26.07.jpg">
+    <img id="img3" src="D:\project\girl sitting.jpg">
+    <div id="line3"></div>
+    
+</body>
+</html>
